@@ -1,0 +1,39 @@
+.menu-bar{
+    position: absolute;
+    width: 310px;
+    height: calc(100vh - 55px);
+    top: 55px;
+    left: -310px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #cccccc;  
+    transition: all 0.25s;
+    ul{
+        list-style: none;
+        li{
+            a{
+                text-decoration: none;
+                color: #000000;
+            }
+        }
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid #e2e2e2;
+        transition: all 0.35s;
+        cursor: pointer;
+        h2{
+            font-family: sans-serif;
+            font-size: 18px;
+            margin: 0 15px;                     
+        }
+        &:hover{
+            background-color: #efefef;         
+        }        
+    }
+}
